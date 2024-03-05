@@ -25,5 +25,5 @@ Quels design system ont été utilisés. Lequel a été sélectionné pour l'int
 
 Liens vers les maquettes 
 
-## Material Design Boyer Evan
+#### Material Design Boyer Evan
 https://www.figma.com/file/ydYiqtJ2GwjOIIiS2HZnoW/Material-3-Design-Kit-(Community)?type=design&node-id=54835%3A29048&mode=design&t=3GDfZoGFBybYN5Cl-1
