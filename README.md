@@ -15,12 +15,15 @@ Description de la page d'accueil et justification de vos choix de conception (ex
 ### Mobile
 ![Welcome](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/e14677d7-1592-4ea5-bdcc-2f50badef09f)
 
-Premier écran que l'utilisateur voit, il y a une courte présentation de l'application avec la possibilité de s'inscrire ou de se connecter
+Premier écran que l'utilisateur voit, il y a une courte présentation de l'application avec la possibilité de s'inscrire ou de se connecter. Cet écran n'existe pas sur la version Desktop
 ### Ecran 2 / Page 2
 ### Mobile
 ![Connexion](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/bf18729a-725d-42a4-b00a-bbe26cabdd0d)
 
-Ecran de connexion ou l'utilisateur renseigne son adresse email et son mot de passe pour se connecter a son compte
+### Desktop
+![Connexion](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/4f6e72db-d913-4986-9d01-ea805f1cdfee)
+
+Ecran de connexion ou l'utilisateur renseigne son adresse email et son mot de passe pour se connecter a son compte.
 
 ### Ecran 3 / Page 3
 Description + justification + différence entre web et mobile + captures d'écran
