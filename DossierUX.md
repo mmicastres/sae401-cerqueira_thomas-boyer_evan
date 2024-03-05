@@ -4,8 +4,7 @@
 Cerqueira Thomas
 Boyer Evan
 ## Description générale de l'application
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ Application De citation quotidienne l'objectif est que chaque jour l'utilisateur à une nouvelle citation qui pourra enregistrer, lors de la première connexion l'utilisateur pourra choisir plusieurs catégories pour avoir des citations personnalisées, de plus il pourra appuyer sur un bouton pour avoir accès à une citation aléatoire qui coûtera 3 pièces, un shop sera disponible pour pouvoir changer son image de profil au début, nous aurons un simple bonhomme le prix de cette image sera entre 5 et 20 selon sa rareté.
 ## Fonctionnalités / Ecrans
 ### Navigation
 Menu caché ? visible ? pourquoi ? quel éléments dans le menu ? pourquoi ? à part le menu, y'a t-il d'autres moyen qui permettent de naviguer ? 
