@@ -27,3 +27,6 @@ Liens vers les maquettes
 
 #### Material Design Boyer Evan
 https://www.figma.com/file/ydYiqtJ2GwjOIIiS2HZnoW/Material-3-Design-Kit-(Community)?type=design&node-id=54835%3A29048&mode=design&t=3GDfZoGFBybYN5Cl-1
+
+#### Base Gallery (Uber) Cerqueira Thomas
+https://www.figma.com/file/FOIAvUz0tMP1Q3tjoiK0Vz/DailyQuote?type=design&node-id=0%3A1&mode=design&t=6po2wwYcXuL0psLN-1
