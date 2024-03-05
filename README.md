@@ -47,7 +47,7 @@ Description + justification + différence entre web et mobile + captures d'écra
 
 ### Ecran 5 / Page 5
 ### Mobile
-![Favoris (détails)](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/25a2dfe1-e49a-4fb2-bbe1-3c3c71d93ff0)
+![Favoris](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/7deda8e3-8530-4add-ab19-42c23fb3968e)
 
 ### Desktop
 ![Favoris (connecté)](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/e6ee156c-d572-4ea2-9d56-96c338abde14)
