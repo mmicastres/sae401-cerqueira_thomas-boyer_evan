@@ -7,9 +7,7 @@ Boyer Evan
  Application De citation quotidienne l'objectif est que chaque jour l'utilisateur à une nouvelle citation qui pourra enregistrer, lors de la première connexion l'utilisateur pourra choisir plusieurs catégories pour avoir des citations personnalisées, de plus il pourra appuyer sur un bouton pour avoir accès à une citation aléatoire qui coûtera 3 pièces, un shop sera disponible pour pouvoir changer son image de profil au début, nous aurons un simple bonhomme le prix de cette image sera entre 5 et 20 selon sa rareté.
 ## Fonctionnalités / Ecrans
 ### Navigation
-Menu caché ? visible ? pourquoi ? quel éléments dans le menu ? pourquoi ? à part le menu, y'a t-il d'autres moyen qui permettent de naviguer ? 
-### Accueil
-Description de la page d'accueil et justification de vos choix de conception (ex. pourquoi vous avez choisi de mettre en avant (ou non) tel élément, avez vous fait des choix par défaut ?  )
+Le menu est constamment visible sur le web il est en haut de page et sur l emobile en bas de page pour permettre une navigation plus rapide, nous gardons le menu en fixe car nous avons peu d'éléments donc pour éviter que l'utilisateur est trop d'action inutile nous l'avons fixe
 
 ### Ecran 1 / Page 1
 ### Mobile
@@ -34,7 +32,7 @@ Ecran de connexion ou l'utilisateur renseigne son adresse email et son mot de pa
 ### Desktop
 ![Inscription](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/71e39de1-edf7-4949-bd80-8943b3fc790c)
 
-Description + justification + différence entre web et mobile + captures d'écran
+C'est la page inscription donc un formulaire plutôt basique avec le bouton mis en contraste pour que l'utilisateur est envie de continuer, la différence entre le format mobile et web est que sur le mobile l'inscription se fait sur 3 page avec une barre de progression pour se situer, elle est en plusieurs page pour eviter de devoir scroller et/ou de surcharger l'écran
 
 ### Ecran 4 / Page 4
 ### Mobile
@@ -43,7 +41,7 @@ Description + justification + différence entre web et mobile + captures d'écra
 ### Desktop
 ![Citation (connecté)](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/7657ada2-a53e-441b-9a1a-7b5f80d90094)
 
-Description + justification + différence entre web et mobile + captures d'écran
+Cette page sera sûrement celle que l'utilisateur voudra observer en premier lieu car c'est sur celle-ci que la citation quotidienne apparaît, il y sera possible de la mettre en favoris mais aussi avec 3 pièces d'obtenir une nouvelle citation au risque de perdre la première.
 
 ### Ecran 5 / Page 5
 ### Mobile
@@ -52,43 +50,40 @@ Description + justification + différence entre web et mobile + captures d'écra
 ### Desktop
 ![Favoris (connecté)](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/e6ee156c-d572-4ea2-9d56-96c338abde14)
 
-Description + justification + différence entre web et mobile + captures d'écran
-
-### Ecran 6 / Page 6
-### Mobile
 ![Favoris (détails)](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/25a2dfe1-e49a-4fb2-bbe1-3c3c71d93ff0)
 
-Description + justification + différence entre web et mobile + captures d'écran
+Cette page montre les citations que l'utilisateur à mise en favoris pour les retrouver, si il change d'avis un bouton supprimer est disponible, sur le format mobile les citations apparaissent une par une alors que sur le web on peut accéder à toutes ou une grande parties des citations mise en favoris
 
-### Ecran 7 / Page 7
+### Ecran 6 / Page 6
 ### Mobile
 ![Inventaire](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/4244c2d0-6f8d-4146-b128-f4b6a0187a35)
 
 ### Desktop
 ![Inventaire (connecté)](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/dd74ccc5-4f28-4c6e-9d56-760d858acdd8)
 
-Description + justification + différence entre web et mobile + captures d'écran
+Cette page répertorie tous les items que l'utilisateur possède et permet aussi de changer sa pp et de voir laquelle est équipé
 
-### Ecran 8 / Page 8
+### Ecran 7 / Page 7
 ### Mobile
 ![Magasin](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/4f13ffc8-c1e7-4c7e-8d59-dd75c3d03d89)
 
 ### Desktop
 ![Magasin (connecté)](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/9b0d34c4-6bc2-48a4-9b90-fdc8196604d1)
 
-Description + justification + différence entre web et mobile + captures d'écran
+Cette page permet à l'utilisateur d'acquérir de nouvelle photos de profil, grâce aux pièces obtenue, il pourra les mettre en liste de souhait pour la retrouver plus facilement à l'aide du filtre
 
-### Ecran 9 / Page 9
+### Ecran 8 / Page 8
 ### Mobile
 ![Profil](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/4e2e7472-d42e-47af-9d33-e974532fa378)
 
 ### Desktop
 ![Profil (connecté)](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/b099ecef-5159-4577-b134-3c4ab7c1ee19)
 
-Description + justification + différence entre web et mobile + captures d'écran
+Cette page permet de vérifier ses informations personnelles saisie lors de l'inscription avec la possibilité de modifier en cas d'erreur
 
 ## Maquettes finales
-Quels design system ont été utilisés. Lequel a été sélectionné pour l'integration.
+
+Base Gallery (Uber)
 
 Liens vers les maquettes 
 
