@@ -13,6 +13,7 @@ Description de la page d'accueil et justification de vos choix de conception (ex
 
 ### Ecran 1 / Page 1
 ![Welcome](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/e14677d7-1592-4ea5-bdcc-2f50badef09f)
+
 Premier écran que l'utilisateur voit, il y a une courte présentation de l'application avec la possibilité de s'inscrire ou de se connecter
 ### Ecran 2 / Page 2
 Description + justification + différence entre web et mobile + Captures d'écran
