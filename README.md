@@ -26,6 +26,9 @@ Premier écran que l'utilisateur voit, il y a une courte présentation de l'appl
 Ecran de connexion ou l'utilisateur renseigne son adresse email et son mot de passe pour se connecter a son compte.
 
 ### Ecran 3 / Page 3
+### Mobile
+![Inscription (step 3)](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/c7c831a7-b365-4dd0-9a02-deaa3ee384be)![Inscription (step 2)](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/a75ea03c-e282-44e3-910c-3c5def2bc735)![Inscription (step 1)](https://github.com/mmicastres/sae401-cerqueira_thomas-boyer_evan/assets/150169319/ad99f623-099f-4400-acfc-fbdef54181c4)
+
 Description + justification + différence entre web et mobile + captures d'écran
 
 ## Maquettes finales
