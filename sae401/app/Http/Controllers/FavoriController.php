@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 class FavoriController extends Controller
 {
     function liste($idutilisateur){
-
         $favoris = Favori::with('citation:citation,idcitation')->where('idutilisateur', $idutilisateur)->get();
         return response()->json($favoris);
     }

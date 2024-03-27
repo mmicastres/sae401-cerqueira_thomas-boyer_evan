@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Citation;
 use App\Models\Utilisateur;
 use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
 
 class CitationController extends Controller
 {
@@ -14,9 +15,5 @@ class CitationController extends Controller
     function citationAleatoire(){
         return response()->json(Citation::inRandomOrder()->first());
     }
-    function achatDeCitation($idutilisateur){
-        $utilisateur=Utilisateur::find($idutilisateur);
-        $utilisateur->update(['pieces' => $utilisateur->pieces-3]);
-        return response()->json($utilisateur);
-    }
+
 }

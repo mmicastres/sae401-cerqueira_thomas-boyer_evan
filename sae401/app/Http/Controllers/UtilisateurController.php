@@ -60,6 +60,21 @@ class UtilisateurController extends Controller
     }
     function liste()
     {
-        return response()->json(Utilisateur::all());
+        return response()->json(Utilisateur::find(36));
     }
+    function piecesEnMoins(Request $request,$idutilisateur)
+    {
+        $utilisateur = Utilisateur::find($idutilisateur);
+        if ($utilisateur->pieces - $request->pieces < 0) {
+            return response("Vous n'avez pas assez de pieces", 400);
+        } else {
+            $utilisateur->pieces = $utilisateur->pieces - $request->pieces;
+            $utilisateur->save();
+            return response()->json($utilisateur);
+        }
+    }
+    function pieces($idutilisateur){
+        $utilisateur = Utilisateur::find($idutilisateur);
+        return response()->json($utilisateur->pieces);
+    }           
 }

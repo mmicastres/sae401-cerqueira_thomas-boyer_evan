@@ -25,16 +25,13 @@ use App\Http\Controllers\VendController;
 //Route Citation
 
 Route::get('/citation', [CitationController::class, 'liste']);
-Route::put('/citation/aleatoire', [CitationController::class, 'achatDeCitation']);
+
 Route::get('/citation/aleatoire', [CitationController::class, 'citationAleatoire']);
 
 //Route Utilisateur
 
 /*Route::get('/utilisateurs', [UtilisateurController::class, 'liste']);*/
 Route::post('/utilisateurs',[UtilisateurController::class, 'creerUtilisateur']);
-Route::middleware(['auth:sanctum'])->get('/utilisateurs',[UtilisateurController::class, 'liste']);
-
-
 Route::get("/inventaire/{idinventaire}", [ContientController::class, 'afficherItemsInventaire']);
 
 Route::post('/login',[UtilisateurController::class, 'authentifierUtilisateur']);
@@ -45,3 +42,7 @@ Route::middleware(['auth:sanctum'])->get('/favoris/{idutilisateur}',[FavoriContr
 Route::middleware(['auth:sanctum'])->post('/favoris',[FavoriController::class, 'ajouter']);
 
 Route::middleware(['auth:sanctum'])->get('/magasin', [VendController::class,'magasinItem']);
+
+
+Route::middleware(['auth:sanctum'])->put('/pieces/{idutilisateur}', [UtilisateurController::class,'piecesEnMoins']);
+Route::middleware(['auth:sanctum'])->get('/pieces/{idutilisateur}', [UtilisateurController::class,'pieces']);
