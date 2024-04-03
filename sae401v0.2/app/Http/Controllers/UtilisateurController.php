@@ -76,13 +76,5 @@ class UtilisateurController extends Controller
     function pieces($idutilisateur){
         $utilisateur = Utilisateur::find($idutilisateur);
         return response()->json($utilisateur->pieces);
-    }          
-    function deconnexion($idutilisateur){
-        $utilisateur = Utilisateur::find($idutilisateur);
-        if (!$utilisateur) {
-            return response()->json(['message' => 'Utilisateur non trouvé'], 404);
-        }
-        $utilisateur->tokens()->delete();
-        return response()->json($utilisateur);
-    }
+    }           
 }

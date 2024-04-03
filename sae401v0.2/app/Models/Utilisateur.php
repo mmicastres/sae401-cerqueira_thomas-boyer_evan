@@ -4,12 +4,11 @@
 
 namespace App\Models;
 
-use Laravel\Sanctum\HasApiTokens;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\PersonalAccessToken;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
 
 /**
  * Class Utilisateur
@@ -58,9 +57,5 @@ class Utilisateur extends Model
 	public function favoris()
 	{
 		return $this->hasMany(Favori::class, 'idutilisateur');
-	}
-	public function tokens()
-	{
-		return $this->hasMany(PersonalAccessToken::class,'tokenable_id');
 	}
 }

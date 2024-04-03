@@ -46,5 +46,3 @@ Route::middleware(['auth:sanctum'])->get('/magasin', [VendController::class,'mag
 
 Route::middleware(['auth:sanctum'])->put('/pieces/{idutilisateur}', [UtilisateurController::class,'piecesEnMoins']);
 Route::middleware(['auth:sanctum'])->get('/pieces/{idutilisateur}', [UtilisateurController::class,'pieces']);
-
-Route::middleware(['auth:sanctum'])->delete('/utilisateurs/{idutilisateur}', [UtilisateurController::class,'deconnexion']);
