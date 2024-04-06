@@ -81,44 +81,54 @@ class UtilisateurController extends Controller
         $utilisateur->tokens()->delete();
         return response()->json("Déconnexion réussie");
     }
-    public function majUtilisateur(Request $request, $idutilisateur)
-    {
-        if (Auth::check()) {
-            $utilisateurAuth = Auth::user();
+    
 
-            if ($utilisateurAuth->id == $idutilisateur) {
-                if ($request->all() == null) {
-                    return response("Veuillez saisir au moins un champ", 400);
-                }
+public function majUtilisateur(Request $request, $idutilisateur)
+{
+    if (Auth::check()) {
+        $utilisateurAuth = Auth::user();
+        $accessToken = $utilisateurAuth->currentAccessToken();
 
-                $utilisateur = Utilisateur::find($idutilisateur);
-
-                if ($utilisateur == null) {
-                    return response("Utilisateur introuvable", 400);
-                }
-
-                if ($request->motdepasse != null) {
-                    // Logique pour mettre à jour le mot de passe
-                }
-                if ($request->nom != null) {
-                    $utilisateur->nom = $request->nom;
-                }
-                if ($request->prenom != null) {
-                    $utilisateur->prenom = $request->prenom;
-                }
-                if ($request->email != null) {
-                    $utilisateur->email = $request->email;
-                }
-
-                $utilisateur->save();
-
-                return response()->json($utilisateur);
-            } else {
-                return response("Vous n'êtes pas autorisé à modifier les données d'un autre utilisateur", 403);
+        if ($accessToken && $accessToken->tokenable_id == $idutilisateur) {
+            if ($request->all() == null) {
+                return response("Veuillez saisir au moins un champ", 400);
             }
+
+            $utilisateur = Utilisateur::find($idutilisateur);
+
+            if ($utilisateur == null) {
+                return response("Utilisateur introuvable", 400);
+            }
+
+            if ($request->motdepasse != null) {
+                if (strlen($request->motdepasse) < 8) {
+                    return response("Le nouveau mot de passe doit contenir au moins 8 caractères", 400);
+                } elseif (password_verify($request->motdepasse, $utilisateur->motdepasse)) {
+                    return response("Veuillez entrer un nouveau mot de passe", 400);
+                } else {
+                    $utilisateur->motdepasse = password_hash($request->motdepasse, PASSWORD_BCRYPT);
+                }
+            }
+            if ($request->nom != null) {
+                $utilisateur->nom = $request->nom;
+            }
+            if ($request->prenom != null) {
+                $utilisateur->prenom = $request->prenom;
+            }
+            if ($request->email != null) {
+                $utilisateur->email = $request->email;
+            }
+
+            $utilisateur->save();
+
+            return response()->json($utilisateur);
         } else {
-            return response("Vous devez être connecté pour effectuer cette action", 401);
+            return response("Vous n'êtes pas autorisé à modifier les données d'un autre utilisateur", 403);
         }
+    } else {
+        return response("Vous devez être connecté pour effectuer cette action", 401);
     }
+}
+
 }
 

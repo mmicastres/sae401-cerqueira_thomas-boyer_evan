@@ -13,8 +13,9 @@ class FavoriController extends Controller
     {
         if (Auth::check()) {
             $utilisateurAuth = Auth::user();
+            $accessToken = $utilisateurAuth->currentAccessToken();
 
-            if ($utilisateurAuth->id == $idutilisateur) {
+            if ($accessToken && $accessToken->tokenable_id == $idutilisateur) {
                 $favoris = Favori::with('citation:citation,idcitation')->where('idutilisateur', $idutilisateur)->get();
                 return response()->json($favoris);
             } else {
@@ -42,8 +43,9 @@ class FavoriController extends Controller
     {
         if (Auth::check()) {
             $utilisateurAuth = Auth::user();
+            $accessToken = $utilisateurAuth->currentAccessToken();
 
-            if ($utilisateurAuth->id == $idutilisateur) {
+            if ($accessToken && $accessToken->tokenable_id == $idutilisateur) {
                 $favoris = Favori::where('idutilisateur', $idutilisateur)
                     ->where('idcitation', $request->idcitation)
                     ->first();
@@ -60,6 +62,5 @@ class FavoriController extends Controller
         } else {
             return response("Vous devez être connecté pour accéder à cette fonctionnalité", 401);
         }
-
     }
 }

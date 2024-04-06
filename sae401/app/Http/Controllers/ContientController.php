@@ -6,17 +6,15 @@ use App\Models\Contient;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-
 class ContientController extends Controller
 {
-
-
     public function afficherItemsInventaire($idInventaire)
     {
         if (Auth::check()) {
             $utilisateurAuth = Auth::user();
+            $accessToken = $utilisateurAuth->currentAccessToken();
 
-            if ($utilisateurAuth->idInventaire === $idInventaire) {
+            if ($accessToken && $accessToken->tokenable_id == $idInventaire) {
                 $contenus = Contient::with('item:iditem,item')->where('idinventaire', $idInventaire)->get();
 
                 if ($contenus->isNotEmpty()) {
@@ -32,3 +30,4 @@ class ContientController extends Controller
         }
     }
 }
+
