@@ -1,4 +1,4 @@
-name: nomworkflow
+name: workflow
 # Contrôle quand le workflow démarre :
 on:
   # sera lancé manuellement :
@@ -22,7 +22,7 @@ jobs:
        uses: milanmk/actions-file-deployer@master
        with:
          remote-protocol: sftp
-         remote-host: hoteSSHalwaysdata
-         remote-user: nomutilisateurSSHalwaysdata
-         remote-password: mdpSSHalwaysdata
-         remote-path: /home/nomcomptealwaysdata/dossiersitelaravel
+         remote-host: ssh-boyer.alwaysdata.net
+         remote-user: boyer
+         remote-password: Ev_andu53500
+         remote-path: /home/boyer/www/dailyquote/public/
